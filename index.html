@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="logo.png" />
   <title>The Resume Studio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <!-- Top bar -->
   <header class="top-bar">
     <div class="container top-bar-inner">
       <div class="logo-group">
-        <img src="logo.png" alt="The Resume Studio logo" class="logo" />
+        <img src="img/logo.png" alt="The Resume Studio logo" class="logo" />
         <span class="brand-name">The Resume Studio</span>
       </div>
 
@@ -38,7 +42,7 @@
         </p>
 
         <div class="hero-buttons">
-          <a href="#upload" class="btn primary">Free CV / Resume Review</a>
+          <a href="#upload" class="btn primary">Submit Your Documents</a>
           <a href="#services" class="btn secondary">View Our Services</a>
         </div>
 
@@ -150,33 +154,32 @@
     </div>
   </section>
 
-  <!-- UPLOAD FORM -->
+  <!-- GOOGLE FORM UPLOAD -->
   <section class="section upload" id="upload">
     <div class="container">
       <h2>Submit Your Documents</h2>
       <p class="section-subtitle">
-        Upload your resume or CV, provide your details, and attach proof of payment.
+        Upload your resume, extra files, and proof of payment using the form below.
       </p>
 
-      <!-- IMPORTANT: this will NOT work until you connect it to a backend or a form service -->
       <div class="google-form-wrapper">
-        <iframe 
+        <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSfbq-SB8dSwXtCU2xqaHEgtH786ZfjaBUyiP4L0b-nYYRGDtA/viewform?embedded=true"
           width="100%"
           height="1800"
           frameborder="0"
           marginheight="0"
           marginwidth="0"
-          style="border-radius: 12px; background: #fff;">
+          loading="lazy"
+        >
           Loading…
         </iframe>
       </div>
 
-
       <p class="form-note">
-        Note: Because GitHub Pages is static hosting, this form needs to be
-        connected to a backend or form service (e.g. Google Forms, a serverless
-        function, or a form provider) to actually receive files.
+        After submitting the form, you will receive a confirmation message.
+        If you experience any issues, please contact:
+        <a href="mailto:hello@theresumestudio.com">hello@theresumestudio.com</a>.
       </p>
     </div>
   </section>
@@ -204,6 +207,7 @@
         <p>We accept bank transfer, GCash, and major cards.</p>
       </div>
     </div>
+
     <div class="footer-bottom">
       © <span id="year"></span> The Resume Studio. All rights reserved.
     </div>
@@ -212,5 +216,6 @@
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </footer>
+
 </body>
 </html>
