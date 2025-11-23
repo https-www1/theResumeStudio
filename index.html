@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Resume Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top bar -->
+  <header class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="logo-group">
+        <img src="img/logo.png" alt="The Resume Studio logo" class="logo" />
+        <span class="brand-name">The Resume Studio</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#team">Team</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#upload">Submit Files</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>CV / Resume Writing Services</h1>
+        <p class="hero-subtitle">
+          Stand out in a competitive job market with a professionally written
+          CV, resume, and LinkedIn profile.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#upload" class="btn primary">Free CV / Resume Review</a>
+          <a href="#services" class="btn secondary">View Our Services</a>
+        </div>
+
+        <p class="hero-note">
+          Trusted by job seekers worldwide · Tailored to your career goals
+        </p>
+      </div>
+
+      <div class="hero-side-card">
+        <p class="side-quote">
+          “We help showcase what you can really do — clearly, confidently, and
+          professionally.”
+        </p>
+        <p class="side-name">— The Resume Studio Team</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2>Professional CV / Resume Writing Services</h2>
+      <p>
+        Our expert writers help you present your experience in a way that truly
+        stands out. We focus on clarity, impact, and keyword optimisation so
+        recruiters quickly see why you’re the right fit.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="grid services-grid">
+        <div class="card">
+          <h3>CV / Resume Writing</h3>
+          <p>Professionally written CVs and resumes tailored to your target role and industry.</p>
+        </div>
+        <div class="card">
+          <h3>LinkedIn Profile Writing</h3>
+          <p>Optimised LinkedIn profiles that support your personal brand and career goals.</p>
+        </div>
+        <div class="card">
+          <h3>Cover Letter Writing</h3>
+          <p>Compelling cover letters that connect your experience to the role you want.</p>
+        </div>
+        <div class="card">
+          <h3>Job Application Support</h3>
+          <p>Help with application forms, statements of purpose, and selection criteria.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section team" id="team">
+    <div class="container">
+      <h2>Meet Our Expert Writers</h2>
+      <p class="section-subtitle">
+        A dedicated team focused on helping you land interviews and offers.
+      </p>
+      <div class="grid team-grid">
+        <div class="card team-card">
+          <div class="avatar placeholder"></div>
+          <h3>Alex</h3>
+          <p>Senior CV Writer</p>
+        </div>
+        <div class="card team-card">
+          <div class="avatar placeholder"></div>
+          <h3>Jamie</h3>
+          <p>Executive Resume Specialist</p>
+        </div>
+        <div class="card team-card">
+          <div class="avatar placeholder"></div>
+          <h3>Sam</h3>
+          <p>LinkedIn & Branding Expert</p>
+        </div>
+        <div class="card team-card">
+          <div class="avatar placeholder"></div>
+          <h3>Taylor</h3>
+          <p>Graduate & Early Career Writer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <h2>Our Latest Customer Reviews</h2>
+      <div class="grid reviews-grid">
+        <div class="card">
+          <h3>Emily</h3>
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>“Got interviews within a week of using my new CV!”</p>
+        </div>
+        <div class="card">
+          <h3>Adrian</h3>
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>“Clear, professional, and perfectly tailored to my industry.”</p>
+        </div>
+        <div class="card">
+          <h3>Denise</h3>
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>“Excellent service and communication throughout.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPLOAD FORM -->
+  <section class="section upload" id="upload">
+    <div class="container">
+      <h2>Submit Your Documents</h2>
+      <p class="section-subtitle">
+        Upload your resume or CV, provide your details, and attach proof of payment.
+      </p>
+
+      <!-- IMPORTANT: this will NOT work until you connect it to a backend or a form service -->
+      <form
+        class="upload-form"
+        action="YOUR_FORM_ENDPOINT_HERE"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <!-- Personal details -->
+        <div class="form-row">
+          <label for="fullName">Full Name *</label>
+          <input id="fullName" name="fullName" type="text" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email Address *</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" />
+        </div>
+
+        <div class="form-row">
+          <label for="service">Service Needed *</label>
+          <select id="service" name="service" required>
+            <option value="">-- Please choose --</option>
+            <option>CV / Resume Writing</option>
+            <option>LinkedIn Profile Writing</option>
+            <option>Cover Letter Writing</option>
+            <option>Job Application Support</option>
+            <option>Package (Multiple Services)</option>
+          </select>
+        </div>
+
+        <!-- Files -->
+        <div class="form-row">
+          <label for="resumeFile">Upload CV / Resume *</label>
+          <input id="resumeFile" name="resumeFile" type="file" required />
+        </div>
+
+        <div class="form-row">
+          <label for="extraFiles">Additional Files (optional)</label>
+          <input id="extraFiles" name="extraFiles" type="file" multiple />
+        </div>
+
+        <div class="form-row">
+          <label for="paymentProof">Upload Proof of Payment *</label>
+          <input id="paymentProof" name="paymentProof" type="file" required />
+          <small>You can upload a screenshot or PDF of your payment.</small>
+        </div>
+
+        <!-- Notes -->
+        <div class="form-row">
+          <label for="details">Additional Details / Job Links</label>
+          <textarea
+            id="details"
+            name="details"
+            rows="4"
+            placeholder="Paste job links or tell us about your target role..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn primary">Submit</button>
+      </form>
+
+      <p class="form-note">
+        Note: Because GitHub Pages is static hosting, this form needs to be
+        connected to a backend or form service (e.g. Google Forms, a serverless
+        function, or a form provider) to actually receive files.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT & FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-column">
+        <h3>The Resume Studio</h3>
+        <p>Email: <a href="mailto:hello@theresumestudio.com">hello@theresumestudio.com</a></p>
+        <p>Facebook · LinkedIn · Instagram</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#upload">Submit Files</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Payments</h3>
+        <p>We accept bank transfer, GCash, and major cards.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> The Resume Studio. All rights reserved.
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
