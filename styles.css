@@ -1,13 +1,14 @@
 :root {
-  --purple: #c62828;        /* main red */
-  --purple-dark: #8e0000;   /* dark red */
-  --accent-pink: #ff5252;   /* bright red accent */
-  --bg: #f7f7ff;
+  --purple: #b30000;        /* Main Red */
+  --purple-dark: #660000;   /* Dark Red */
+  --accent-pink: #ff3333;   /* Bright Red Accent */
+  --bg: #fff5f5;
   --card-bg: #ffffff;
   --text-main: #222222;
   --text-muted: #666666;
-  --footer-bg: #2b1111;     /* dark red for footer */
+  --footer-bg: #2a0000;
 }
+
 
 
 *,
