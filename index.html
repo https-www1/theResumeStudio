@@ -159,70 +159,19 @@
       </p>
 
       <!-- IMPORTANT: this will NOT work until you connect it to a backend or a form service -->
-      <form
-        class="upload-form"
-        action="YOUR_FORM_ENDPOINT_HERE"
-        method="POST"
-        enctype="multipart/form-data"
-      >
-        <!-- Personal details -->
-        <div class="form-row">
-          <label for="fullName">Full Name *</label>
-          <input id="fullName" name="fullName" type="text" required />
-        </div>
+      <div class="google-form-wrapper">
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfbq-SB8dSwXtCU2xqaHEgtH786ZfjaBUyiP4L0b-nYYRGDtA/viewform?embedded=true"
+          width="100%"
+          height="1800"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          style="border-radius: 12px; background: #fff;">
+          Loading…
+        </iframe>
+      </div>
 
-        <div class="form-row">
-          <label for="email">Email Address *</label>
-          <input id="email" name="email" type="email" required />
-        </div>
-
-        <div class="form-row">
-          <label for="phone">Phone Number</label>
-          <input id="phone" name="phone" type="tel" />
-        </div>
-
-        <div class="form-row">
-          <label for="service">Service Needed *</label>
-          <select id="service" name="service" required>
-            <option value="">-- Please choose --</option>
-            <option>CV / Resume Writing</option>
-            <option>LinkedIn Profile Writing</option>
-            <option>Cover Letter Writing</option>
-            <option>Job Application Support</option>
-            <option>Package (Multiple Services)</option>
-          </select>
-        </div>
-
-        <!-- Files -->
-        <div class="form-row">
-          <label for="resumeFile">Upload CV / Resume *</label>
-          <input id="resumeFile" name="resumeFile" type="file" required />
-        </div>
-
-        <div class="form-row">
-          <label for="extraFiles">Additional Files (optional)</label>
-          <input id="extraFiles" name="extraFiles" type="file" multiple />
-        </div>
-
-        <div class="form-row">
-          <label for="paymentProof">Upload Proof of Payment *</label>
-          <input id="paymentProof" name="paymentProof" type="file" required />
-          <small>You can upload a screenshot or PDF of your payment.</small>
-        </div>
-
-        <!-- Notes -->
-        <div class="form-row">
-          <label for="details">Additional Details / Job Links</label>
-          <textarea
-            id="details"
-            name="details"
-            rows="4"
-            placeholder="Paste job links or tell us about your target role..."
-          ></textarea>
-        </div>
-
-        <button type="submit" class="btn primary">Submit</button>
-      </form>
 
       <p class="form-note">
         Note: Because GitHub Pages is static hosting, this form needs to be
